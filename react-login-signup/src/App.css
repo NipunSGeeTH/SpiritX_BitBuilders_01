@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://www.codingnepalweb.com/wp-content/uploads/2023/07/Create-A-Glassmorphism-Login-Form-in-HTML-and-CSS-only.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Hide navbar on screens 1000px or smaller */
+@media (max-width: 1000px) {
+    .navbar {
+        display: none;
+    }
+}
+
+/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Centering the auth-wrapper below navbar */
+.auth-wrapper {
+    position: absolute;
+    top: 60%; /* Increased from 50% to move it lower */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Sign-Up/Login Box Styling */
+.auth-inner {
+    background: rgba(255, 255, 255, 0.35); /* Glassmorphism Effect */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Increase Input Field Size */
+.auth-inner input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.auth-inner input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Adjust Login/Sign-Up Button */
+.auth-inner button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.auth-inner button:hover {
+    background-color: #003f7f;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .auth-wrapper {
+        width: 90%;
+        max-width: 400px;
+        top: 55%;
+    }
+
+    .auth-inner {
+        padding: 30px;
+    }
+
+    .auth-inner input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .auth-inner button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

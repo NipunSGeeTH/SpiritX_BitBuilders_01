@@ -66,4 +66,4 @@
   <p>This project is open-source and available under the <strong>MIT License</strong>.</p>
 
   <hr>
-  <p>Made with ❤️ by Your Name</p>
+  <p>Made with ❤️ by Bit Builders</p>
